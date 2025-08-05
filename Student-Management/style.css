@@ -1,0 +1,40 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #3f0d7f);
+    color: #fff;
+  }
+  
+  .bg-gradient {
+    background: linear-gradient(to right, #7F00FF, #E100FF);
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #ff007f, #7f00ff);
+    border-bottom: 5px solid #ffd700;
+  }
+  
+  .card {
+    background-color: #2c2c2c;
+    color: #fff;
+    border-radius: 12px;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #444;
+    color: #ffd700;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #ffd700;
+    color: #000;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
+  footer {
+    border-top: 2px solid #7f00ff;
+  }

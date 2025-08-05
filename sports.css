@@ -1,0 +1,209 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container1{
+    height: 135px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1;
+
+}
+.container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+    position: relative;
+}
+.container1 h1{
+    position: absolute;
+    top: 3%;
+    left: 68%;
+    transform: translate(-50%, -50%); 
+    color: green; 
+    padding: 10px;
+    z-index: 1; 
+    width: 100%;
+
+}
+.container1 h3{
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    z-index: 1;
+    max-width: 100%;
+}
+.container2{
+    height: 135px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1;
+    position: relative;
+    right: 0%;
+    left: 77pc;
+}
+.container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+    position: relative;
+}
+.container2 h1 {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    color: green;
+    padding: 10px;
+    z-index: 1;
+    width: 100%;
+}
+
+.container2 h3 {
+    position: absolute;
+    top: 8%;
+    right: 3%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.container3{
+    height: 135px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1;
+
+}
+.container3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+    position: relative;
+}
+.container3 h1{
+    position: absolute;
+    top: 42%;
+    left: 68%;
+    transform: translate(-50%, -50%); 
+    color: green; 
+    padding: 10px;
+    z-index: 1; 
+    width: 100%;
+
+}
+.container3 h3{
+    position: absolute;
+    top: 47%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    z-index: 1;
+    max-width: 100%;
+}
+.container4 {
+    height: 135px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1;
+    position: relative;
+    right: 0%;
+    left: 77pc;
+}
+
+.container4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+    position: relative;
+}
+.container4 h1 {
+    position: absolute;
+    top: 3%;
+    right: 3%; 
+    transform: translate(-50%, -50%);
+    color: green;
+    padding: 10px;
+    z-index: 1;
+    width: 100%;
+}
+
+.container4 h3 {
+    position: absolute;
+    top: 8%;
+    right: 3%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    z-index: 1;
+    max-width: 100%;
+    position: absolute;
+    top: 8%;
+    left: 3%;
+}
+.container5{
+    height: 135px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1;
+
+}
+.container5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+    position: relative;
+}
+.container5 h1{
+    position: absolute;
+    bottom: 11%;
+    left: 68%;
+    transform: translate(-50%, -50%); 
+    color: green; 
+    padding: 10px;
+    z-index: 1; 
+    width: 100%;
+
+}
+.container5 h3{
+    position: absolute;
+    bottom: 1%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    z-index: 1;
+    max-width: 100%;
+};
+@media only screen and (max-width: 445px){
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+}

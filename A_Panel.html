@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accounting Information System</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  .fee-section {
+    margin-bottom: 20px;
+  }
+  .fee-section label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .fee-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .logout-btn {
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+    .fee-section input {
+      padding: 8px;
+    }
+    .logout-btn {
+      padding: 8px 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+    .fee-section label {
+      margin-bottom: 3px;
+    }
+    .fee-section input {
+      padding: 6px;
+    }
+    .logout-btn {
+      padding: 6px 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Accounting Information System</h2>
+  <div class="fee-section">
+    <label for="course-total"><h4>Course Fee</h4><br>Total Amount</label>
+    <input type="number" id="course-total">
+    <label for="course-paid">Paid Amount</label>
+    <input type="number" id="course-paid">
+    <label for="course-remaining">Remaining Amount</label>
+    <input type="number" id="course-remaining">
+  </div>
+  <!-- Repeat for Hostel Fee and Bus Fee -->
+  <div class="container">
+    <div class="fee-section">
+      <label for="course-total"><h4>Hostel Fee</h4><br>Total Amount</label>
+      <input type="number" id="course-total">
+      <label for="course-paid">Paid Amount</label>
+      <input type="number" id="course-paid">
+      <label for="course-remaining">Remaining Amount</label>
+      <input type="number" id="course-remaining">
+    </div>
+    <div class="container">
+        <div class="fee-section">
+          <label for="course-total"><h4>Bus Fee</h4><br>Total Amount</label>
+          <input type="number" id="course-total">
+          <label for="course-paid">Paid Amount</label>
+          <input type="number" id="course-paid">
+          <label for="course-remaining">Remaining Amount</label>
+          <input type="number" id="course-remaining">
+        </div>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+<script>
+  function logout() {
+    // Implement logout functionality here
+    window.location.href = 'login.html';
+  }
+</script>
+</body>
+</html>

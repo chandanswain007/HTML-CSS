@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background-color: rgb(143, 130, 106);
+}
+nav{
+    background-color:rgb(133, 137, 158);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    user-select: none;
+}
+.left-nav{
+  height: 100px;
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.set1:hover{
+  border: 1px solid white;
+  background-color: rgb(175, 131, 157);
+}
+
+  .header {
+      height: 100px;
+      width: 50%;
+      color: #ffffff;
+      padding: 20px;
+      font-size: 1.5em;
+      position: absolute;
+      right: 0%;
+      font-weight:   bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }  
+  .header:hover{
+    border: 1px solid white;
+    background-color: rgb(175, 131, 157);
+  }
+  .panel{
+    height: 40px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.chat{
+  background-image: url("chat.jpg");
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+ 
+.box{
+  padding: 20px 15px;
+}
+.outer1{
+  height: 400px;
+  width:500px ;
+}
+.outer1 h3{
+  
+    position: absolute;
+    left: 325px;
+}
+.benefit{
+  height: 350px;
+  width: 480px;
+  background-image: url("Ai benefits.jpg");
+  background-size: cover;
+}
+.outer2{
+  height: 400px;
+  width:500px ;
+}
+
+.outer2 h3{
+  
+  position: absolute;
+  left: 1040px;
+}
+.data{
+  height: 350px;
+  width: 480px;
+  background-image: url("Data\ secured.jpg");
+  background-size: cover;
+}
+
+.text{
+  height: 350px;
+  width: 550px;
+  background-image: url("Ai\ img1.jpg");
+  background-size: cover;
+}
+.ans{
+  height: 350px;
+  width: 480px;
+  background-image: url("ans1.jpg");
+  background-size: cover;
+}
+.knowldge{
+  height: 350px;
+  width: 480px;
+  background-image: url("knowldge\ based.jpg");
+  background-size: cover;
+}
+
+.change{
+  color: black;
+}
+
+.set1:hover{
+  border: 1px solid white;
+  background-color: rgb(175, 131, 157);
+}

@@ -1,0 +1,38 @@
+html,body{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: violet;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+@media only screen and (max-width:600px){
+    .box{
+        background-color: yellow;
+    }
+
+    .container{
+        background-color: violet;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

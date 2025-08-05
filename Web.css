@@ -1,0 +1,97 @@
+/* Base styles */
+
+.content {
+
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.content .leftContent {
+    width: 70%;
+}
+
+.image {
+    width: 28%;
+    margin: auto; 
+}
+
+.skills {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+}
+
+.color {
+    color: brown;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.b {
+    margin: auto;
+}
+
+.b .rightText img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+    object-fit: cover;
+}
+
+.b .rightText {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjust width for smaller screens */
+    .content {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .content .leftContent {
+        width: 100%;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    .a {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .b {
+        margin-top: 20px;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+* {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+#id1{
+    color: gray;
+}
+.myclass{
+    background-color: green;
+}
+#box{
+    background-color: blue;
+}
+.heading{
+    color: red;
+}
+p{
+    background-color: green;
+}
+.heading1{
+    text-transform: capitalize;
+}
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}

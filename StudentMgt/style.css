@@ -1,0 +1,77 @@
+/* Using modern CSS3 variables */ 
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --card-bg-color: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.2);
+    --text-color: #f0f0f0;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding-top: 56px; /* Height of the fixed navbar */
+    color: var(--text-color);
+    /* Animated Gradient Background for a "hot" look */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    min-height: 100vh;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.main-container {
+    min-height: calc(100vh - 56px);
+    padding: 2rem;
+}
+
+/* Glassmorphism effect for the main content card */
+.content-card {
+    background: var(--card-bg-color);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 2rem;
+    width: 100%;
+    max-width: 900px;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(10px);
+}
+
+.timetable {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the border-radius is applied to the table */
+}
+
+.timetable thead {
+    background-color: #343a40 !important;
+    color: white;
+}
+
+.timetable td, .timetable th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+    .content-card {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

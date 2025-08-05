@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile Page</title>
+    <style>
+        *{
+            background-color : rgb(255, 255, 255);
+            color : orange
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-weight: bolder;
+            text-align: start;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            text-align: center;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            animation: slide-up 1s ease-in-out;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            animation: fade-in 1s ease-in-out;
+        }
+        .form-group1{
+            width: 400px;
+            padding: 10px
+        }
+        input[type="submit"]:hover {
+    background-color: #45A049;
+    transform: scale(1.1);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #70ff15;
+    transform: scale(1.05);
+}
+h1 {
+    text-align: center;
+}
+
+
+
+        label {
+            display: block;
+            font-weight: bold;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: slide-up 1s ease-in-out;
+        }
+
+        @keyframes slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><marquee>Student Profile Page</marquee></h1>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="rollno">Roll No</label>
+                <input type="text" id="rollno" placeholder="Enter your roll number" required>
+            </div>
+            <div class="form-group">
+               <label for="course">Course:</label>
+                <select name="course" class="form-group1">
+                    <option value="BCA">BCA</option>
+                    <option value="BSC.CS">BSC.CS</option>
+                    <option value="BBA">BBA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="semester">Semester:</label>
+                <select name="course" class="form-group1">
+                    <option value="1st">1st Semester</option>
+                    <option value="2nd">2nd Semester</option>
+                    <option value="3rd">3rd Semester</option>
+                    <option value="4th">4th Semester</option>
+                    <option value="5th">5th Semester</option>
+                    <option value="6th">6th Semester</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" placeholder="Enter your address"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html

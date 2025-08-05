@@ -1,0 +1,16 @@
+*{
+    background-color: white;
+}
+#navbar{
+    height: 50px;
+    border: 2px solid whitesmoke;
+    background-color: white;
+}
+input[type="text" i] {
+    writing-mode: horizontal-tb !important;
+    padding-block: 1px;
+    padding-inline: 2px;
+    height: 20px;
+    width: auto;
+
+}

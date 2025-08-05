@@ -1,0 +1,35 @@
+#logo{
+    margin: 0%;
+    padding: 0%;
+    color: #f08804;
+    font-size: 25px;
+    padding-right: 200px;
+}
+#navbar{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    height: 60px;
+}
+a{
+    margin: 0%;
+    padding: 0%;
+    padding-right: 200px;
+    color: white;
+}
+.contentbox{
+    margin: 0%;
+    padding: 0%;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#content{
+    height: 615px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}

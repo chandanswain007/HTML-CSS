@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan Swain - Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Example background color */
+    color: #333; /* Example text color */
+}
+
+header {
+    background-color: #333; /* Example header color */
+    color: white;
+    padding: 1rem 0;
+    text-align: center; /* Center the header content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto; /* Center the sections */
+    max-width: 800px; /* Set a maximum width for the sections */
+    background-color: white; /* Example section background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.project {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd; /* Example border */
+    padding: 1rem;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Add more styles as needed */
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Chandan Swain</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p> To secure a challenging  position  where I can utilize my strong programming skills, 
+            project experience, and innovative mindset to contribute effectively to cutting-edge software solutions 
+            while continually growing and advancing my expertise in technology. </p>
+        <img src="Screenshot 2024-08-13 184125.png" alt="Your Photo">  </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Sports Page of Creative Techno College Website</h3>
+            <p>Sports page is a section of a college website dedicated to providing information about its athletic programs, teams, and related activities. It serves as a hub for students, faculty, alumni, and fans to stay updated on the latest news, schedules, results, and achievements in the sports.</p>
+            <a href="project1-link.com" target="_blank">View Project</a>
+        </div>
+
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Attendance Management System</h3>
+            <p>An Attendance Management System (AMS) using Java is a software solution designed to automate and streamline the process of tracking and managing attendance.</p>
+            <a href="project2-link.com" target="_blank">View Project</a>
+        </div>
+        </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: swainc305@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/chandan-swain-1313b0267/" target="_blank">My LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/chandanswain007" target="_blank">My GitHub</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chandan Swain</p>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+     <script>
+        // script.js (Optional - for adding interactivity)
+
+// Example: Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+</html>
