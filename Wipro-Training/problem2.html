@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #user-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        #user-container img {
+            border-radius: 50%;
+            width: 128px;
+            height: 128px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="fetch-user-btn">Fetch Random User</button>
+    <div id="user-container" style="display:none;">
+        <img id="user-picture" src="" alt="User Profile Picture">
+        <h2 id="user-name"></h2>
+        <p id="user-email"></p>
+    </div>
+
+    <script>
+        // Get references to the HTML elements
+        const fetchButton = document.getElementById('fetch-user-btn');
+        const userContainer = document.getElementById('user-container');
+        const userPicture = document.getElementById('user-picture');
+        const userName = document.getElementById('user-name');
+        const userEmail = document.getElementById('user-email');
+
+        // Add a click event listener to the button
+        fetchButton.addEventListener('click', () => {
+            // Make a Fetch API request to the random user API
+            fetch('https://randomuser.me/api/')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Extract the first user from the results array
+                    const user = data.results[0];
+                    
+                    // Extract required information
+                    const name = `${user.name.first} ${user.name.last}`;
+                    const email = user.email;
+                    const pictureUrl = user.picture.large;
+                    
+                    // Display the information on the webpage
+                    userPicture.src = pictureUrl;
+                    userName.textContent = name;
+                    userEmail.textContent = email;
+                    userContainer.style.display = 'block'; // Show the container
+                })
+                .catch(error => {
+                    // Log any errors to the console
+                    console.error('Error fetching random user:', error);
+                    userContainer.style.display = 'block';
+                    userContainer.innerHTML = '<p>Could not fetch user data. Please try again.</p>';
+                });
+        });
+    </script>
+
+</body>
+</html>

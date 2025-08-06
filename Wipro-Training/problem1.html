@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Employee Data</title>
+</head>
+<body>
+    <h1>Check the browser console for employee data.</h1>
+    <script>
+        // URL for the JSON endpoint
+        const apiUrl = 'https://dummy.restapiexample.com/api/v1/employees';
+
+        // Use the Fetch API to get data from the URL
+        fetch(apiUrl)
+            .then(response => {
+                // Check if the response is successful (status code 200-299)
+                if (!response.ok) {
+                    throw new Error('Network response was not ok: ' + response.statusText);
+                }
+                // Parse the response body as JSON
+                return response.json();
+            })
+            .then(data => {
+                // Display the retrieved data on the console
+                console.log('Successfully retrieved employee data:');
+                console.log(data);
+            })
+            .catch(error => {
+                // Handle any errors that occurred during the fetch operation
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    </script>
+</body>
+</html>
